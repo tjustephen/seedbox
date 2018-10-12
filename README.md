@@ -24,7 +24,20 @@ A guide to set up a seedbox:
   
     wget --no-check-certificate -qO inexistence.sh https://github.com/Aniverse/inexistence/raw/master/inexistence.sh & bash inexistence.sh -u <username> -p <password> --apt-yes --mt-max --de 1.3.15 --qb 4.1.3 --rt 0.9.6 --tr no --flood-no --rdp-no --wine-no --tools-yes --flexget-yes --rclone-yes --bbr-no --tweaks-yes -y
 
-**4. rclone
+**4. rclone**
 
     rclone config  #略去具体过程
 rclone mount
+
+    wget https://www.moerats.com/usr/shell/rcloned && nano rcloned
+ 修改以下内容：
+ 
+    NAME=""  #rclone name名，及配置时输入的Name
+    REMOTE=''  #远程文件夹，Google Drive网盘里的挂载的一个文件夹
+    LOCAL=''  #挂载地址，VPS本地挂载目录
+    
+    #设置自启
+    mv rcloned /etc/init.d/rcloned
+    chmod +x /etc/init.d/rcloned
+    update-rc.d -f rcloned defaults
+    bash /etc/init.d/rcloned start
