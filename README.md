@@ -14,10 +14,7 @@ A guide to set up a seedbox:
     wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://moeclub.org/attachment/LinuxShell/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh  
   
 **3. Install Inexistence**
-
-    bash -c "$(wget --no-check-certificate -qO- https://github.com/Aniverse/inexistence/raw/master/inexistence.sh)"  
-  or
-  
+      
     wget --no-check-certificate -qO inexistence.sh https://github.com/Aniverse/inexistence/raw/master/inexistence.sh & bash inexistence.sh
 
   or 无交互  #自行添加用户名密码
