@@ -6,7 +6,9 @@ A guide to set up a seedbox:
 
 2. Install BBR  
     wget --no-check-certificate -qO 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f  
-    Install 魔改bbr（option）    
+    
+    Install 魔改bbr（option） 
+      
     wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://moeclub.org/attachment/LinuxShell/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh  
   
 3. Install Inexistence  
