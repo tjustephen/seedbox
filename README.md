@@ -30,6 +30,7 @@ A guide to set up a seedbox:
 rclone mount
 
     wget https://www.moerats.com/usr/shell/rcloned && nano rcloned
+    
  修改以下内容：
  
     NAME=""  #rclone name名，及配置时输入的Name
@@ -37,7 +38,4 @@ rclone mount
     LOCAL=''  #挂载地址，VPS本地挂载目录
     
     #设置自启
-    mv rcloned /etc/init.d/rcloned
-    chmod +x /etc/init.d/rcloned
-    update-rc.d -f rcloned defaults
-    bash /etc/init.d/rcloned start
+    mv rcloned /etc/init.d/rcloned && chmod +x /etc/init.d/rcloned && update-rc.d -f rcloned defaults && bash /etc/init.d/rcloned start
