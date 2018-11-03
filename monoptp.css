@@ -1728,3 +1728,7 @@ div.pad ul, div.body ul, table.torrent_table blockquote>ul {
 
 
 .torrent-info-link--user-seeding{font-weight:bold;color:#EA7504}.torrent-info-link--user-leeching{font-weight:bold;color:#E62E2E}.torrent-info-link--user-uploaded{font-weight:bold;color:#DE1BB1}.torrent-info-link--user-snatched{font-weight:bold;color:#1474D8}.torrent-info-link--user-downloaded{font-weight:bold;color:#0DA329}
+.last5-movies__table{margin:0;width:100%;}
+.last5-movies__table>tbody>tr>td{padding:0 10px;}
+.last5-movies__link {display:inline-block;width:106px;height:150px;margin-bottom:5px;background-position:center;background-repeat:no-repeat;background-size:contain;}
+.last5-movies__show-all-row{text-align:right}.last5-movies__show-all-link{display:inline-block;margin-top:8px}
