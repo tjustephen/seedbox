@@ -23,7 +23,7 @@ A guide to set up a seedbox:
 ## 2.4 Sysctl 
 ```
 rm -rf /etc/sysctl.conf
-wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/sysctl.conf
+wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/tjustephen/seedbox/master/sysctl.conf
 sysctl -p
 ```
 
