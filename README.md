@@ -1,11 +1,11 @@
 # seedbox
 A guide to set up a seedbox:
 
-**1. first to test the seedbox**  
+##1. first to test the seedbox
   
     wget -qO- bench.sh | bash
 
-**2.1 Install BBR**  
+##2.1 Install BBR**  
   
     wget --no-check-certificate -qO 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f  
   
