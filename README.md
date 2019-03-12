@@ -13,7 +13,7 @@ A guide to set up a seedbox:
       
     wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://moeclub.org/attachment/LinuxShell/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh  
   
-**2.3 Install another Mogai BBR
+**2.3 Install another Mogai BBR **
 
     wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install
 
