@@ -1,24 +1,39 @@
 # seedbox
 A guide to set up a seedbox:
 
-# 1. first to test the seedbox
+# 1.First to test the seedbox
   
     wget -qO- bench.sh | bash
+    or
+    wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
 
 # 2.Network Optimization 
 ## 2.1 Install BBR**  
   
     wget --no-check-certificate -qO 'BBR.sh' 'https://moeclub.org/attachment/LinuxShell/BBR.sh' && chmod a+x BBR.sh && bash BBR.sh -f  
   
-**2.2 Install 魔改bbr（option）** 
+## 2.2 Install 魔改bbr（option）
       
     wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://moeclub.org/attachment/LinuxShell/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh  
   
-**2.3 Install another Mogai BBR **
+## 2.3 Install another Mogai BBR 
 
     wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install
 
-**3. Install Inexistence**
+## 2.4 Sysctl 
+```
+rm -rf /etc/sysctl.conf
+wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/sysctl.conf
+sysctl -p
+```
+
+# 3.HDD Tuning
+```
+nano /etc/fstab
+#Make your root sd2 partition entry look something like this in fstab (assuming your partition is ext4)
+/dev/sd1 / ext4 defaults,noatime 0 0
+```
+# 4. Install Inexistence
       
     wget --no-check-certificate -qO inexistence.sh https://github.com/Aniverse/inexistence/raw/master/inexistence.sh & bash inexistence.sh
 
